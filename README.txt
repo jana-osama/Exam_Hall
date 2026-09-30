@@ -1,0 +1,25 @@
+EXAM HALL CASE STUDY 7 - FINAL ATmega328P
+
+Files:
+main.c, I2C_H.h/I2C.c, SPI_H.h/SPI.c, UART_H.h/UART.c, GPIO_H.h/GPIO.c,
+TIMER_H.h/TIMER.c, RTC_H.h/RTC.c, EEPROM_H.h/EEPROM.c, RFID_H.h/RFID.c,
+OLED_H.h/OLED.c
+
+Pins:
+RC522: SS PB2, MOSI PB3, MISO PB4, SCK PB5, RST PC0
+I2C: SDA PC4, SCL PC5 (OLED + DS3231 + 24C32)
+LEDs: Green PD6, Yellow PD5, Red PD7
+Buzzer: PB0
+UART: RX PD0, TX PD1, 9600 8N1
+Addresses: OLED 0x3C, DS3231 0x68, 24C32 0x50
+
+Commands:
+START 5
+ADD 11223344 Jany
+LIST
+PAUSE
+RESUME
+SETTIME 2026-09-30T19:20:00
+
+Default late time: 15 minutes.
+Warnings: 10 minutes and 1 minute.
